@@ -1,6 +1,6 @@
 {
   "name": "fenixedu",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "FenixEdu API module wrapper",
   "main": "index.js",
   "scripts": {

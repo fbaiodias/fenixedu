@@ -29,7 +29,8 @@ exports = module.exports = function doRequest(options, cb) {
         err.message += ' — ' + (body.message || body);
       }
     }
-    cb(err, JSON.parse(body));
+    //cb(err, JSON.parse(body));
+    cb(err, body);
   }
 };
 

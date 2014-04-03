@@ -29,13 +29,14 @@ test('Getting Space', function(t){
 
 test('Getting Space Blueprint', function(t){
   var id = '2465311230082';
-  fenix.spaces.getSpaceBlueprint(id, '/tmp/file.jpg', 'jpeg', function(err, res){
+  var file = '/tmp/file.jpg';
+  fenix.spaces.getSpaceBlueprint(id, file, 'jpeg', function(err, res){
     t.type(res, 'Object', 'Should be an object');
     t.equal(
       res.headers['content-type'],
       'image/jpeg',
       'Content type should be image/jpeg');
-    var d = fs.openSync(opts.file, 'r');
+    var d = fs.openSync(file, 'r');
     t.notOk(err, 'Should be false. As in the file exists');
     t.end();
   });

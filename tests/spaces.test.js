@@ -2,6 +2,7 @@ process.env.NODE_ENV = 'test';
 var tap = require('tap');
 var test = tap.test;
 var fenix = require('./../index.js');
+var fs = require('fs');
 
 test('Getting Spaces', function(t){
   fenix.spaces.getSpaces(function(err, result){
@@ -26,7 +27,6 @@ test('Getting Space', function(t){
   });
 });
 
-/*
 test('Getting Space Blueprint', function(t){
   var id = '2465311230082';
   fenix.spaces.getSpaceBlueprint(id, '/tmp/file.jpg', 'jpeg', function(err, res){
@@ -40,4 +40,3 @@ test('Getting Space Blueprint', function(t){
     t.end();
   });
 });
-*/

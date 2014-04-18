@@ -1,6 +1,6 @@
 {
   "name": "fenixedu",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "FenixEdu API module wrapper",
   "main": "index.js",
   "scripts": {
@@ -22,9 +22,17 @@
     "Técnico",
     "Lisboa"
   ],
-  "author": "Francisco Dias <francisco@baiodias.com> (http://franciscodias.net)",
+  "author": {
+    "name": "Francisco Dias",
+    "email": "francisco@baiodias.com",
+    "url": "http://franciscodias.net"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/XicoMBD/fenixedu/issues"
-  }
+  },
+  "readme": "fenixedu\n========\n",
+  "readmeFilename": "README.md",
+  "_id": "fenixedu@0.0.0",
+  "_from": "fenixedu@"
 }

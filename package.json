@@ -4,6 +4,7 @@
   "description": "FenixEdu API module wrapper",
   "main": "index.js",
   "scripts": {
+    "start": "NODE_PATH=. node index.js",
     "test": "node_modules/.bin/tap tests/*.test.js"
   },
   "repository": {

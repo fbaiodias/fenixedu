@@ -1,5 +1,5 @@
 var request = require('request');
-var config  = require('./../config.json');
+var config  = require('./../config.js');
 
 exports = module.exports = function doRequest(options, cb) {
   if (typeof options !== 'object') {
